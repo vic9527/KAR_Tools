@@ -1,0 +1,77 @@
+MSR {
+	actions := 20
+	joints := 20
+	subjects := 10 (each for 2 or 3 times)
+	seq := 567
+	challenging := noise
+	solution := cross-subject test[5], 1/2 train 1/2 test //? all take this sol?
+}
+
+// need try K-means with arg(160)
+UTK {
+	actions := 10
+	joints := 20
+	subjects := 10 (each for 2 times)
+	seq := 199?
+	challenging := view point, high intra-class variations
+	solution := cross-subject test[42], half of subjects for train or test
+}
+
+FLOA {
+	actions := 9
+	joints := 15
+	subjects := 10
+	seq := 215
+	challenging := involve human-object interactions
+	solution := leave-one-subject-out cross validation[10]
+}
+
+MHAD {
+	actions := 10
+	joints := 25
+	subjects := 12 (each for 2 times)
+	seq := 24 (each has 10 actions by a subject)
+	challenging := high inter-class similarity and intra-class variations
+	solution := cross-subject test, half of subjects for train or test
+}
+
+load('D:\work\task\FLOA\data\test_data.mat');
+load('D:\work\task\FLOA\data\test_label.mat');
+load('D:\work\task\FLOA\data\train_data.mat');
+load('D:\work\task\FLOA\data\train_label.mat');
+
+s = size(train_data, 1);
+qu = randi(s, 100, 1);
+trl = train_label(qu, :);
+trd = train_data(qu, :);
+
+qu = randi(s, 100, 1);
+tel = train_label(qu, :);
+ted = train_data(qu, :);
+model = svmtrain(trl, trd, '-b 1');
+[p_label, accuracy, decision] = svmpredict(tel, ted, model, '-b 1');
+
+
+8.11 8:50
+========================
+1.从MSR开始，不断扩展，优化自己的机器学习系统。
+2. 版本：
+1）0.00，最粗暴的原始骨骼点数据。
+2）0.01，以中心为原点的骨骼点数据。
+3）0.02，有正则化的骨骼点数据（？如何）
+4）0.03，试一下pairwise的效果
+5）0.04，试一下视角纠正？
+6）0.05，
+
+
+【总的思想】
+1）先把特征在某个数据集上测试得好，再推广到别的数据集，因为如果自身都不好，即使别的数据集表现得好，又有
+什么用呢？不是普遍可用的。
+2）以上版本，为了train和test的方便，都用svm来做，记得有空做一下参数优化。
+3）有了好的特征之后，再推广用别的算子来做，比如神经网络，随机森林等。
+4）或许可以尝试什么DTW啊，在论文中看到的各种算法等等。
+
+
+[Matlab Usage]
+1. 复制一个矩阵repmat(A, m, n)，很方便！
+2. 

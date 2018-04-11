@@ -1,0 +1,99 @@
+# 此为注释 – 将被 Git 忽略
+*.a       # 忽略所有 .a 结尾的文件
+!lib.a    # 但 lib.a 除外
+/TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+build/    # 忽略 build/ 目录下的所有文件
+doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+
+
+
+echo # test >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/cooljacket/test.git
+git push -u origin master
+
+Welcome to Git (version 1.9.5-preview20141217)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+jacket@CRT-DY /d/work/MSR_part
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.252.129)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)?
+Host key verification failed.
+
+jacket@CRT-DY /d/work/MSR_part
+$ ssh-keygen -t rsa -b 4096 -C "1101925754@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/jacket/.ssh/id_rsa):
+Created directory '/c/Users/jacket/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/jacket/.ssh/id_rsa.
+Your public key has been saved in /c/Users/jacket/.ssh/id_rsa.pub.
+The key fingerprint is:
+85:d0:c2:c7:4a:75:9e:41:4b:c5:57:60:7e:ef:ee:33 1101925754@qq.com
+The key's randomart image is:
++--[ RSA 4096]----+
+|     ..+..=o. oo.|
+|      +.+= +.o.  |
+|     . +. =  .. .|
+|      .  .     ..|
+|        S       .|
+|               . |
+|                .|
+|               E |
+|               .=|
++-----------------+
+
+jacket@CRT-DY /d/work/MSR_part
+$
+
+
+jacket@CRT-DY ~/.ssh
+$ ssh-add C:\Users\jacket\.ssh\id_rsa
+Could not open a connection to your authentication agent.
+
+Welcome to Git (version 1.9.5-preview20141217)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+jacket@CRT-DY ~/.ssh
+$ ssh-agent -s
+SSH_AUTH_SOCK=/tmp/ssh-QU5ocE8uNg5U/agent.4840; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=3252; export SSH_AGENT_PID;
+echo Agent pid 3252;
+
+jacket@CRT-DY ~/.ssh
+$ ssh-add C:\Users\jacket\.ssh\id_rsa
+Could not open a connection to your authentication agent.
+
+jacket@CRT-DY ~/.ssh
+$ ssh-agent bash
+bash-3.1$ ssh-add C:\Users\jacket\.ssh\id_rsa
+Could not open a connection to your authentication agent.
+bash-3.1$ eval "$(ssh-agent)"
+Agent pid 1588
+bash-3.1$ ssh-add --h
+Enter passphrase for /c/Users/jacket/.ssh/id_rsa:
+Identity added: /c/Users/jacket/.ssh/id_rsa (/c/Users/jacket/.ssh/id_rsa)
+bash-3.1$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.252.128)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.128' (RSA) to the list of know
+n hosts.
+Hi cooljacket! You've successfully authenticated, but GitHub does not provide sh
+ell access.
+bash-3.1$ jacket@CRT-DY ~/.ssh
+bash: jacket@CRT-DY: command not found
+bash-3.1$ $ ssh-add C:\Users\jacket\.ssh\id_rsa
+bash: $: command not found
+bash-3.1$

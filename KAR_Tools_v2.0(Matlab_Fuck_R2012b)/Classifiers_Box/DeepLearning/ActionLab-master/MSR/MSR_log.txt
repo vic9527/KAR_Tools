@@ -1,0 +1,10 @@
+Version		Description							Accuracy
+v0.00 		Original Skeleton Data				MSR accuracy is: 50.183150%
+v0.01		Move the origin to 7th Joint		MSR accuracy is: 53.479853%
+v0.02 		Normalize with mean and std			
+
+
+
+发现，直接所有数据直接(x - mean) / std的效果很差，只有5.860806%，这应该是所有的数据是一个整体，而不是独立的原因。
+所以现在先尝试将坐标原点移动到人体中心（第7个点）。
+

@@ -1,0 +1,26 @@
+D:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.exe
+D:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.pdb
+D:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.exe
+D:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.pdb
+E:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.exe
+E:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.pdb
+E:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.csprojResolveAssemblyReference.cache
+E:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.exe
+E:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.pdb
+E:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\Microsoft.Kinect.dll
+E:\Kinect Demo\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\Microsoft.Kinect.xml
+C:\Users\Administrator\Desktop\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.exe
+C:\Users\Administrator\Desktop\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.pdb
+C:\Users\Administrator\Desktop\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.exe
+C:\Users\Administrator\Desktop\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.pdb
+C:\Users\Administrator\Desktop\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.exe
+D:\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.pdb
+D:\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.exe
+D:\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.pdb
+D:\HAR\Dataset\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.exe
+D:\HAR\Dataset\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.pdb
+D:\HAR\Dataset\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.exe
+D:\HAR\Dataset\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\bin\Debug\HelloKinectMatrix.pdb
+D:\HAR\Dataset\SHCD(SmartHomeControlDataset)\SHCD1\HelloKinectMatrix\HelloKinectMatrix\obj\x86\Debug\HelloKinectMatrix.csprojResolveAssemblyReference.cache
